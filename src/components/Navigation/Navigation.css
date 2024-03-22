@@ -1,7 +1,8 @@
-/* src/components/Navigation/Navigation.css */
-
 @import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap');
 
+*{
+    font-family: "Roboto Mono";
+}
 .navigation {
     display: flex;
     justify-content: space-between;
@@ -11,6 +12,12 @@
 .title {
     font-size: 1.5rem;
     font-weight: bold;
+    margin-left: 2em;
+}
+
+.logo-container {
+    display: flex; 
+    align-items: center;
 }
 
 .nav-list {
@@ -31,11 +38,14 @@
     color: #0d0d0d; 
 }
 
-.nav-list li {
-    font-family: "Roboto Mono";
-}
-
 button {
+    background-color: black;
+    color: white;
     padding: 6px;
     margin-top: -3em;
+}
+
+.logocss {
+    width: 100px; 
+    margin-right: 10px; 
 }
