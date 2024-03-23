@@ -1,0 +1,44 @@
+  .cart {
+    width: 80%;
+    max-width: 800px;
+    border: 1px solid #ccc;
+    padding: 20px;
+    border-radius: 8px;
+    margin: 0 auto; 
+  }
+  
+  .main-container {
+    justify-content: space-between; /* Align items at the ends (left and right) */
+  }
+  
+  .left-side {
+    margin-bottom: 10px;
+  }
+  
+  .right-side {
+    margin-bottom: 20px;
+  }
+  .checkout-button{
+    float: right;
+  }
+  
+  .question {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid #ccc;
+    padding: 10px 0;
+  }
+  
+  .dropdown {
+    margin-right: 10px;
+  }
+  
+  .delete-button {
+    background-color: #ff0000;
+    color: #fff;
+    border: none;
+    padding: 5px 10px;
+    cursor: pointer;
+  }
+  
