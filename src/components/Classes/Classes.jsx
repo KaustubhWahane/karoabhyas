@@ -4,6 +4,7 @@ import Thumbnail from '../../assets/Thumbnail.jpg';
 function Classes ()  {
   return (
     <>
+    <h1 style={{textAlign:"center"}}>I have made changes in the layout to enhance user experience and functionality</h1>
       <div className="container">
         <div className="photo-container">
           <img
