@@ -28,6 +28,7 @@ function Login() {
                 type="text" 
                 id="name" 
                 className="form-input" 
+                size={30}
               />
             </div>
             <div className="form-group">
@@ -35,7 +36,8 @@ function Login() {
               <input 
                 type="email" 
                 id="email" 
-                className="form-input" 
+                className="form-input"
+                size={30} 
               />
             </div>
             <div className="form-group">
@@ -44,14 +46,18 @@ function Login() {
                 type="tel" 
                 id="phoneNumber" 
                 className="form-input" 
+                size={20}
               />
+              <button type="button" onClick={handleSignUp} className="login-button">Send OTP</button>
+              <p>Didn&apos;t recieve it? <a href="#" style={{textDecoration:"none"}}>RESEND</a></p>
             </div>
             <div className="form-group">
               <label htmlFor="otp" className="form-label">OTP:</label>
               <input 
                 type="text" 
                 id="otp" 
-                className="form-input" 
+                className="form-input"
+                size={30} 
               />
             </div>
             <button type="button" onClick={handleSignUp} className="login-button">Sign Up</button>
