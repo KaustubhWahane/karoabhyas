@@ -1,0 +1,43 @@
+.footer {
+    background-color: black;
+    color: white;
+    padding: 20px 0; /* Adjust padding as needed */
+  }
+  
+  .container {
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .left-text,
+  .right-text {
+    flex: 1;
+    text-align: center; /* Adjust alignment as needed */
+  }
+  
+  .left-text {
+    text-align: left;
+  }
+  
+  .right-text {
+    text-align: right;
+  }
+
+  .custom-button {
+    background-color: white;
+    color: black;
+    padding: 10px 20px; 
+    margin-right: 10px;
+    border: none;
+    border-radius: 5px; 
+    cursor: pointer;
+  }
+  
+  .custom-button:last-child {
+    margin-right: 0; 
+  }
+  
+  .custom-button:hover {
+    background-color: #f0f0f0; 
+  }
+  

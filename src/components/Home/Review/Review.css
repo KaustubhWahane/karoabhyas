@@ -1,0 +1,30 @@
+.review-container {
+    display: inline-block;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 3em;
+}
+  
+  .rectangle {
+    width: 30em;
+    padding: 1em;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    box-sizing: border-box;
+    background-color: #f0f0f0;
+    margin-right: 20px;
+  }
+  
+  .header {
+    margin-bottom: 10px;
+  }
+  
+  .line {
+    border: none;
+    border-top: 1px solid #000;
+  }
+  
+  .content {
+    margin-top: 10px;
+  }
+  
