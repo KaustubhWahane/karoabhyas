@@ -3,9 +3,14 @@ import './Cart.css';
 
 function Cart() {
   const [showPopup, setShowPopup] = useState(false);
+  const [showDeletePopup, setShowDeletePopup] = useState(false);
 
   const togglePopup = () => {
     setShowPopup(!showPopup);
+  };
+
+  const toggleDeletePopup = () => {
+    setShowDeletePopup(!showDeletePopup);
   };
 
   return (
@@ -28,7 +33,7 @@ function Cart() {
                   <option key={num + 1} value={num + 1}>{num + 1}</option>
                 ))}
               </select>
-              <button className="delete-button">Delete</button>
+              <button className="delete-button" onClick={toggleDeletePopup}>Delete</button>
             </div>
           </div>
         </div>
@@ -37,11 +42,23 @@ function Cart() {
         <div className="popup">
           <div className="popup-content">
             <h2>PLEASE PROVIDE YOUR ADDRESS</h2>
-            <textarea style={{width: "500px" , height: "100px"}} type="text" placeholder="Enter your address" />
+            <textarea style={{ width: "500px", height: "100px" }} type="text" placeholder="Enter your address" />
             <button onClick={togglePopup}>Close</button>
           </div>
         </div>
       )}
+      {showDeletePopup && (
+      <div className="popup">
+        <div className="popup-content">
+          <h2>DELETE BOOK FROM CART?</h2>
+          <div className="popup-buttons">
+            <button onClick={toggleDeletePopup} style={{ marginRight: "10px" }}>Cancel</button>
+            <button style={{marginLeft: "15em" }}>Delete</button>
+          </div>
+        </div>
+      </div>
+)}
+
     </div>
   );
 }
