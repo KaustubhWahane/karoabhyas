@@ -15,7 +15,7 @@ function Classes ()  {
         <div className="content">
           <h2 className="header">Sample Video Title</h2>
           <p className="text">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium illo nisi incidunt minima corporis quis eum delectus accusamus at quidem adipisci ullam ad quibusdam quasi excepturi possimus, temporibus unde minus, labore repudiandae aspernatur cupiditate? Veniam totam in quod culpa eius dolor nostrum labore accusamus molestiae sequi amet, exercitationem asperiores commodi!
+           Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus sit dolorem alias iure sapiente quos!
           </p>
           <br />
           <button className="button">PRACTICE</button>
@@ -33,7 +33,7 @@ function Classes ()  {
       <div className="content">
         <h2 className="header">Sample Video Title</h2>
         <p className="text">
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium illo nisi incidunt minima corporis quis eum delectus accusamus at quidem adipisci ullam ad quibusdam quasi excepturi possimus, temporibus unde minus, labore repudiandae aspernatur cupiditate? Veniam totam in quod culpa eius dolor nostrum labore accusamus molestiae sequi amet, exercitationem asperiores commodi!
+         Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus sit dolorem alias iure sapiente quos!
         </p>
         <br />
         <button className="button">PRACTICE</button>
@@ -51,7 +51,7 @@ function Classes ()  {
       <div className="content">
         <h2 className="header">Sample Video Title</h2>
         <p className="text">
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium illo nisi incidunt minima corporis quis eum delectus accusamus at quidem adipisci ullam ad quibusdam quasi excepturi possimus, temporibus unde minus, labore repudiandae aspernatur cupiditate? Veniam totam in quod culpa eius dolor nostrum labore accusamus molestiae sequi amet, exercitationem asperiores commodi!
+         Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus sit dolorem alias iure sapiente quos!
         </p>
         <br />
         <button className="button">PRACTICE</button>
