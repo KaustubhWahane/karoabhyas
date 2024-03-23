@@ -39,8 +39,8 @@ function Navigation({ handleTabClick }) {
     <>
       <nav className="navigation">
         <div className="logo-container">
-          <h1 className="title" onClick={() => handleItemClick(null)}> {/* Add onClick for Home */}
-            <a style={{ color: "black", textDecoration: "none" }} href="/">KaroAbhayaas</a>
+          <h1 className="title" onClick={() => handleItemClick(null)}> 
+            <a style={{ color: "black", textDecoration: "none" }} href="/">Karo Abhayaas</a>
           </h1>
           <img src={Logo} alt="Error in Logo" className='logocss' />
         </div>

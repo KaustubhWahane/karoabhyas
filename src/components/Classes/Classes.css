@@ -1,0 +1,36 @@
+.container {
+    margin-top: 5em;
+    display: grid;
+    grid-template-columns: auto 1fr;
+    grid-gap: 20px;
+    padding: 20px;
+  }
+  
+  .photo-container {
+    width: 100%;
+    margin-left: -10%;
+  }
+  
+  .photo {
+    width: 100%;
+  }
+
+  .header {
+    font-size: 24px;
+    margin-bottom: 10px;
+  }
+  
+  .text {
+    font-size: 16px;
+    margin-bottom: 10px;
+  }
+  
+  .button {
+    padding: 10px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
