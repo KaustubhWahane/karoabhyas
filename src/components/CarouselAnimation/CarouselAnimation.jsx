@@ -1,28 +1,38 @@
-import Slider from 'react-slick';
-import 'slick-carousel/slick/slick.css';
-import 'slick-carousel/slick/slick-theme.css';
-import Photo from '../../assets/Slider.png';
+import Carousel from 'react-bootstrap/Carousel';
+import 'bootstrap/dist/css/bootstrap.min.css'; 
+import Photo from '../../assets/Slider.png'; 
 
 function MyCarousel() {
-  const settings = {
-    dots: true,
-    speed: 500,
-    slidesToScroll: 1
-  };
-
   return (
-    <Slider {...settings}>
-      <div>
-        <img src={Photo} alt="Slide 1" />
-      </div>
-      <div>
-        <img src={Photo} alt="Slide 2" />
-      </div>
-      <div>
-        <img src={Photo} alt="Slide 3" />
-      </div>
-      {/* Add more slides here if needed */}
-    </Slider>
+    <Carousel controls={false}>
+      <Carousel.Item>
+        <img
+          className="d-block w-100"
+          src={Photo}
+          alt="Slide 1"
+        />
+        <Carousel.Caption>
+        </Carousel.Caption>
+      </Carousel.Item>
+      <Carousel.Item>
+        <img
+          className="d-block w-100"
+          src={Photo}
+          alt="Slide 2"
+        />
+        <Carousel.Caption>
+        </Carousel.Caption>
+      </Carousel.Item>
+      <Carousel.Item>
+        <img
+          className="d-block w-100"
+          src={Photo}
+          alt="Slide 3"
+        />
+        <Carousel.Caption>
+        </Carousel.Caption>
+      </Carousel.Item>
+    </Carousel>
   );
 }
 
