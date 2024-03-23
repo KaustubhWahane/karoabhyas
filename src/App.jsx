@@ -1,6 +1,7 @@
 import { useState } from 'react';
 import './App.css';
 import Classes from './components/Classes/Classes';
+import Home from './components/Home/Home'; // Import the Home component
 import Navigation from './components/Navigation/Navigation';
 import Products from './components/Products/Products';
 import AboutUs from './components/About/About';
@@ -18,6 +19,7 @@ function App() {
     <div className="app-container">
       <Navigation handleTabClick={handleTabClick} />
       <div className="rendered-component">
+        {activeTab === null && <Home />}
         {activeTab === 'Classes' && <Classes />}
         {activeTab === 'Products' && <Products />} 
         {activeTab === 'AboutUs' && <AboutUs />} 
