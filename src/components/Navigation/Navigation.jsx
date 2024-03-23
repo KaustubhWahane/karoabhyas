@@ -1,25 +1,45 @@
-import  { useState } from 'react';
+import { useState } from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faUser, faShoppingCart } from '@fortawesome/free-solid-svg-icons';
 import Logo from '../../assets/karoabhyasLogo.png';
-import PropTypes from 'prop-types';
 import './Navigation.css';
+import Classes from '../Classes/Classes';
+import Products from '../Products/Products';
+import AboutUs from '../About/About';
+import Login from '../Login/Login';
+import Cart from '../Cart/Cart';
 
-function Navigation({ handleClassesClick }) {
+function Navigation() {
   const [activeItem, setActiveItem] = useState(null);
 
   const handleItemClick = (index) => {
     setActiveItem(index);
-    // Call handleClassesClick function when the "Classes" list item is clicked
-    if (index === 1) {
-      handleClassesClick();
+  };
+
+  const renderComponent = () => {
+    switch (activeItem) {
+      case 1:
+        return <Classes />;
+      case 2:
+        return <Products />;
+      case 3:
+        return <AboutUs />;
+      case 4:
+        return <Login />;
+      case 5:
+        return <Cart />;
+      default:
+        return null;
     }
   };
 
   return (
+    <>
     <nav className="navigation">
       <div className="logo-container">
-        <h1 className="title"><a style={{color:"black", textDecoration:"none"}}href="/">KaroAbhayaas</a> </h1>
+        <h1 className="title">
+          <a style={{ color: "black", textDecoration: "none" }} href="/">KaroAbhayaas</a>
+        </h1>
         <img src={Logo} alt="Error in Logo" className='logocss' />
       </div>
       <ul className="nav-list">
@@ -31,12 +51,9 @@ function Navigation({ handleClassesClick }) {
         <li><a className={`nav-item ${activeItem === 5 ? 'black' : ''}`} href="#" onClick={() => handleItemClick(5)}><FontAwesomeIcon icon={faShoppingCart} /></a></li>
       </ul>
     </nav>
+    {renderComponent()}
+    </>
   );
 }
 
 export default Navigation;
-
-// This is because for ESLint
-Navigation.propTypes = {
-  handleClassesClick: PropTypes.func.isRequired, // Ensure handleClassesClick is a function and is required
-};

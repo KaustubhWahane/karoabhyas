@@ -1,20 +1,30 @@
 import { useState } from 'react';
 import './App.css';
+import Classes from './components/Classes/Classes';
 import Navigation from './components/Navigation/Navigation';
-import Classes from './components/Classes/Classes'; 
+import Products from './components/Products/Products';
+import AboutUs from './components/About/About';
+import User from './components/Login/Login';
+import Cart from './components/Cart/Cart';
 
 function App() {
-  const [showClasses, setShowClasses] = useState(false); 
+  const [activeTab, setActiveTab] = useState(null);
 
-  const handleClassesClick = () => {
-    setShowClasses(true);
+  const handleTabClick = (tab) => {
+    setActiveTab(tab);
   };
 
   return (
-    <>
-      <Navigation handleClassesClick={handleClassesClick} />
-      {showClasses && <Classes />} 
-    </>
+    <div className="app-container">
+      <Navigation handleTabClick={handleTabClick} />
+      <div className="rendered-component">
+        {activeTab === 'Classes' && <Classes />}
+        {activeTab === 'Products' && <Products />} 
+        {activeTab === 'AboutUs' && <AboutUs />} 
+        {activeTab === 'User' && <User />} 
+        {activeTab === 'Cart' && <Cart />} 
+      </div>
+    </div>
   );
 }
 
