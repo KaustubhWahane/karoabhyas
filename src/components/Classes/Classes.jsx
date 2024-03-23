@@ -15,7 +15,7 @@ function Classes ()  {
         <div className="content">
           <h2 className="header">Sample Video Title</h2>
           <p className="text">
-           Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus sit dolorem alias iure sapiente quos!
+           Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta nemo veritatis dolorem temporibus eius et delectus ipsum corporis modi amet totam molestias repellat, tempora illo saepe voluptas consequuntur, nesciunt libero vero vitae. Rerum enim aperiam vitae iure, assumenda voluptatum hic?
           </p>
           <br />
           <button className="button">PRACTICE</button>
@@ -33,7 +33,7 @@ function Classes ()  {
       <div className="content">
         <h2 className="header">Sample Video Title</h2>
         <p className="text">
-         Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus sit dolorem alias iure sapiente quos!
+         Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta nemo veritatis dolorem temporibus eius et delectus ipsum corporis modi amet totam molestias repellat, tempora illo saepe voluptas consequuntur, nesciunt libero vero vitae. Rerum enim aperiam vitae iure, assumenda voluptatum hic?
         </p>
         <br />
         <button className="button">PRACTICE</button>
@@ -51,7 +51,7 @@ function Classes ()  {
       <div className="content">
         <h2 className="header">Sample Video Title</h2>
         <p className="text">
-         Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus sit dolorem alias iure sapiente quos!
+         Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta nemo veritatis dolorem temporibus eius et delectus ipsum corporis modi amet totam molestias repellat, tempora illo saepe voluptas consequuntur, nesciunt libero vero vitae. Rerum enim aperiam vitae iure, assumenda voluptatum hic?
         </p>
         <br />
         <button className="button">PRACTICE</button>

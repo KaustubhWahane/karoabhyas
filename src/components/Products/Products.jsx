@@ -18,7 +18,8 @@ function Products ()  {
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium illo nisi incidunt minima corporis quis eum delectus accusamus at quidem adipisci ullam ad quibusdam quasi excepturi possimus, temporibus unde minus, labore repudiandae aspernatur cupiditate? Veniam totam in quod culpa eius dolor nostrum labore accusamus molestiae sequi amet, exercitationem asperiores commodi!
           </p>
           <br />
-          <button className="button">PRACTICE</button>
+          <p style={{fontWeight:"bold",fontSize:"20px" }}>₹1500</p>
+          <button className="button">ADD TO CART</button>
         </div>
       </div>
       <hr style={{opacity: "0.3"}}/>
@@ -36,7 +37,8 @@ function Products ()  {
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium illo nisi incidunt minima corporis quis eum delectus accusamus at quidem adipisci ullam ad quibusdam quasi excepturi possimus, temporibus unde minus, labore repudiandae aspernatur cupiditate? Veniam totam in quod culpa eius dolor nostrum labore accusamus molestiae sequi amet, exercitationem asperiores commodi!
         </p>
         <br />
-        <button className="button">PRACTICE</button>
+        <p style={{fontWeight:"bold",fontSize:"20px" }}>₹1500</p>
+        <button className="button">ADD TO CART</button>
       </div>
       </div>
       <hr style={{opacity: "0.3"}}/>
@@ -54,7 +56,8 @@ function Products ()  {
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium illo nisi incidunt minima corporis quis eum delectus accusamus at quidem adipisci ullam ad quibusdam quasi excepturi possimus, temporibus unde minus, labore repudiandae aspernatur cupiditate? Veniam totam in quod culpa eius dolor nostrum labore accusamus molestiae sequi amet, exercitationem asperiores commodi!
         </p>
         <br />
-        <button className="button">PRACTICE</button>
+        <p style={{fontWeight:"bold",fontSize:"20px" }}>₹1500</p>
+        <button className="button">ADD TO CART</button>
       </div>
       </div>
       <br />
