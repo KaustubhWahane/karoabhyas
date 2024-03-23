@@ -1,12 +1,19 @@
-import "./Cart.css";
+import { useState } from 'react';
+import './Cart.css';
 
 function Cart() {
+  const [showPopup, setShowPopup] = useState(false);
+
+  const togglePopup = () => {
+    setShowPopup(!showPopup);
+  };
+
   return (
     <div className="cart">
       <div className="main-container">
         <div className="left-side">Total: 2000 Rupees</div>
         <div className="right-side">
-          <button className="checkout-button">Checkout</button>
+          <button className="checkout-button" onClick={togglePopup}>Checkout</button>
         </div>
         <div className="question-container">
           <div className="question">
@@ -26,6 +33,15 @@ function Cart() {
           </div>
         </div>
       </div>
+      {showPopup && (
+        <div className="popup">
+          <div className="popup-content">
+            <h2>PLEASE PROVIDE YOUR ADDRESS</h2>
+            <textarea style={{width: "500px" , height: "100px"}} type="text" placeholder="Enter your address" />
+            <button onClick={togglePopup}>Close</button>
+          </div>
+        </div>
+      )}
     </div>
   );
 }
