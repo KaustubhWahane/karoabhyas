@@ -1,14 +1,15 @@
 import { useState } from 'react';
-import './Login.css'; // Import the CSS file where ye define yer classes
+import './Login.css'; 
 
 function Login() {
-  const [username, setUsername] = useState('');
-  const [password, setPassword] = useState('');
   const [showSignUp, setShowSignUp] = useState(false);
 
   const handleLogin = () => {
-    // Here be where ye handle the login logic, me heartie!
-    console.log('Logging in with:', username, password);
+    alert('Just to check its working!');
+  };
+
+  const handleSignUp = () => {
+    alert('Just to check its working!');
   };
 
   const toggleSignUp = () => {
@@ -17,33 +18,71 @@ function Login() {
 
   return (
     <div className="login-container">
-      <h2 className="login-heading">Name</h2>
+      <h2 className="login-heading">{showSignUp ? 'Sign Up' : 'Login'}</h2>
       <form>
-        <div className="form-group">
-          <label htmlFor="username" className="form-label">Username:</label>
-          <input 
-            type="text" 
-            id="username" 
-            value={username} 
-            onChange={(e) => setUsername(e.target.value)} 
-            className="form-input" 
-          />
-        </div>
-        <div className="form-group">
-          <label htmlFor="password" className="form-label">Password:</label>
-          <input 
-            type="password" 
-            id="password" 
-            value={password} 
-            onChange={(e) => setPassword(e.target.value)} 
-            className="form-input" 
-          />
-        </div>
-        <button type="button" onClick={handleLogin} className="login-button">Login</button>
+        {showSignUp ? (
+          <>
+            <div className="form-group">
+              <label htmlFor="name" className="form-label">Name:</label>
+              <input 
+                type="text" 
+                id="name" 
+                className="form-input" 
+              />
+            </div>
+            <div className="form-group">
+              <label htmlFor="email" className="form-label">Email:</label>
+              <input 
+                type="email" 
+                id="email" 
+                className="form-input" 
+              />
+            </div>
+            <div className="form-group">
+              <label htmlFor="phoneNumber" className="form-label">Phone Number:</label>
+              <input 
+                type="tel" 
+                id="phoneNumber" 
+                className="form-input" 
+              />
+            </div>
+            <div className="form-group">
+              <label htmlFor="otp" className="form-label">OTP:</label>
+              <input 
+                type="text" 
+                id="otp" 
+                className="form-input" 
+              />
+            </div>
+            <button type="button" onClick={handleSignUp} className="login-button">Sign Up</button>
+          </>
+        ) : (
+          <>
+            <div className="form-group">
+              <label htmlFor="username" className="form-label">Username:</label>
+              <input 
+                type="text" 
+                id="username" 
+                className="form-input" 
+              />
+            </div>
+            <div className="form-group">
+              <label htmlFor="password" className="form-label">Password:</label>
+              <input 
+                type="password" 
+                id="password" 
+                className="form-input" 
+              />
+            </div>
+            <button type="button" onClick={handleLogin} className="login-button">Login</button>
+          </>
+        )}
       </form>
       <p>
-        Don&apos;t have an account? 
-        <button type="button" onClick={toggleSignUp} className="signup-button">Sign Up</button>
+        {showSignUp ? 'Already have an account? ' : "Don't have an account? "}
+        <button type="button" onClick={toggleSignUp} className="signup-button">
+          {showSignUp ? 'Login' : 'Sign Up'}
+        </button>
       </p>
     </div>
   );
