@@ -1,7 +1,7 @@
 .container {
     display: flex;
     flex-direction: column;
-    gap: 20px; /* Adjust the gap between items as needed */
+    gap: 20px; 
   }
   
   .item {
@@ -10,7 +10,7 @@
   }
   
   .left, .right {
-    width: 100%; /* Ensure each side takes up full width */
+    width: 100%; 
   }
   
   @media (min-width: 768px) {
@@ -19,7 +19,7 @@
     }
   
     .left, .right {
-      width: 50%; /* Split the width equally for each side */
+      width: 50%; 
     }
   }
   

@@ -1,5 +1,5 @@
 import AboutUs from '../../assets/AboutUs.jpg';
-import './About.css'; // Don't forget to create this file for yer styles!
+import './About.css'; 
 
 export default function About() {
   return (
@@ -14,7 +14,6 @@ export default function About() {
         </div>
       </div>
       <br /><br />
-      {/* Second item with image on left and Lorem Ipsum on right */}
       <div className="item">
         <div className="left">
           <img src={AboutUs} alt="Error fetching image" />
@@ -24,7 +23,6 @@ export default function About() {
         </div>
       </div>
       <br /><br />
-      {/* Third item with Lorem Ipsum on left and image on right */}
       <div className="item">
         <div className="left">
           <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad illum placeat repellendus incidunt numquam nostrum possimus expedita in molestiae eveniet cupiditate a alias unde reprehenderit neque facilis, officiis qui esse id ipsum ratione! Officia corrupti possimus ea, sint perspiciatis ab ducimus eos quam laboriosam, inventore ipsam facere quasi sit non.</p>
