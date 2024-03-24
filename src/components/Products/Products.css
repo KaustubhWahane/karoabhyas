@@ -1,77 +1,5 @@
-.container1 {
-  margin: 15em;
-  margin-top: 5em;
-  display: grid;
-  grid-template-columns: auto 1fr;
-  grid-gap: 20px;
-  padding: 20px;
-}
-
-.photo-container1 {
-  width: 100%;
-  margin-left: -10%;
-}
-
-.photo1 {
-  width: 70%;
-}
-
-.header1 {
-  font-size: 24px;
-  margin-bottom: 10px;
-}
-
-.text1 {
-  font-size: 16px;
-  margin-bottom: 10px;
-}
-
-.button1 {
-  padding: 10px;
-  background-color: black;
-  color: #fff;
-  border: none;
-  border-radius: 5px;
-  cursor: pointer;
-}
-
-.container2 {
-  margin: 15em;
-  margin-top: 5em;
-  display: grid;
-  grid-template-columns: auto 1fr;
-  grid-gap: 20px;
-  padding: 20px;
-}
-
-.photo-container2 {
-  width: 100%;
-  margin-left: -10%;
-}
-
-.photo2 {
-  width: 70%;
-}
-
-.header2 {
-  font-size: 24px;
-  margin-bottom: 10px;
-}
-
-.text2 {
-  font-size: 16px;
-  margin-bottom: 10px;
-}
-
-.button2 {
-  padding: 10px;
-  background-color: black;
-  color: #fff;
-  border: none;
-  border-radius: 5px;
-  cursor: pointer;
-}
-
+.container1,
+.container2,
 .container3 {
   margin: 15em;
   margin-top: 5em;
@@ -81,25 +9,35 @@
   padding: 20px;
 }
 
+.photo-container1,
+.photo-container2,
 .photo-container3 {
   width: 100%;
   margin-left: -10%;
 }
 
+.photo1,
+.photo2,
 .photo3 {
   width: 70%;
 }
 
+.header1,
+.header2,
 .header3 {
   font-size: 24px;
   margin-bottom: 10px;
 }
 
+.text1,
+.text2,
 .text3 {
   font-size: 16px;
   margin-bottom: 10px;
 }
 
+.button1,
+.button2,
 .button3 {
   padding: 10px;
   background-color: black;

@@ -1,25 +1,28 @@
+/* About.css */
+
 .container {
-    display: flex;
-    flex-direction: column;
-    gap: 20px; 
-  }
-  
+  display: flex;
+  flex-direction: column;
+  gap: 20px; 
+}
+
+.item {
+  display: flex;
+  flex-direction: column;
+}
+
+.left,
+.right {
+  width: 100%; 
+}
+
+@media (min-width: 768px) {
   .item {
-    display: flex;
-    flex-direction: column;
+    flex-direction: row;
   }
-  
-  .left, .right {
-    width: 100%; 
+
+  .left,
+  .right {
+    width: 50%; 
   }
-  
-  @media (min-width: 768px) {
-    .item {
-      flex-direction: row;
-    }
-  
-    .left, .right {
-      width: 50%; 
-    }
-  }
-  
+}
