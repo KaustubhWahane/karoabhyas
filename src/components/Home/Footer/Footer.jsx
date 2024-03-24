@@ -34,13 +34,13 @@ function Footer() {
         </ul>
       </div>
       <div className="footer-col">
-        <h4>online shop</h4>
-        <ul>
-          <li><a href="#">watch</a></li>
-          <li><a href="#">bag</a></li>
-          <li><a href="#">shoes</a></li>
-          <li><a href="#">dress</a></li>
-        </ul>
+          <h4>Education</h4>
+          <ul>
+            <li><a href="#">Mathematics</a></li>
+            <li><a href="#">Science</a></li>
+            <li><a href="#">History</a></li>
+            <li><a href="#">Literature</a></li>
+          </ul>
       </div>
     </div>
     </footer>
