@@ -1,12 +1,8 @@
-.container {
+.parent-container {
+  margin: 10em;
   display: grid;
-  grid-template-columns: 1fr 1fr;
-  grid-gap: 20px;
+  grid-template-columns: 1fr 1fr; 
 }
 
-.left-side,
-.right-side {
-  padding: 10px;
-  background: #ffe4b5; 
-}
+
 
