@@ -17,6 +17,7 @@
   
   .header {
     margin-bottom: 10px;
+    color: black;
   }
   
   .line {
@@ -25,6 +26,7 @@
   }
   
   .content {
+    color: black;
     margin-top: 10px;
   }
   @media (max-width: 767px) {

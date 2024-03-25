@@ -1,5 +1,5 @@
-import './Review.css'; // Import yer custom CSS for styling
-import reviewData from './reviewData'; // Import the review data
+import './Review.css'; 
+import reviewData from './reviewData';
 
 function Review() {
   return (
