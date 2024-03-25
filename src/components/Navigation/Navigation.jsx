@@ -1,6 +1,7 @@
-import { useState } from 'react';
+import { useState, useContext} from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faUser, faShoppingCart } from '@fortawesome/free-solid-svg-icons';
+import { faUser, faShoppingCart, faAdjust } from '@fortawesome/free-solid-svg-icons';
+import { ThemeContext } from '../ThemeContext';
 import Logo from '../../assets/karoabhyasLogo.png';
 import PropTypes from 'prop-types'; 
 import './Navigation.css';
@@ -12,6 +13,7 @@ import Cart from '../Cart/Cart';
 
 function Navigation({ handleTabClick }) {
   const [activeItem, setActiveItem] = useState(null);
+  const { toggleTheme } = useContext(ThemeContext);
 
   const handleItemClick = (index) => {
     setActiveItem(index);
@@ -51,6 +53,7 @@ function Navigation({ handleTabClick }) {
           <li><a className={`nav-item ${activeItem === 3 ? 'black' : ''}`} href="#" onClick={() => handleItemClick(3)}>About Us</a></li>
           <li><a className={`nav-item ${activeItem === 4 ? 'black' : ''}`} href="#" onClick={() => handleItemClick(4)}><FontAwesomeIcon icon={faUser} /></a></li>
           <li><a className={`nav-item ${activeItem === 5 ? 'black' : ''}`} href="#" onClick={() => handleItemClick(5)}><FontAwesomeIcon icon={faShoppingCart} /></a></li>
+          <li><a href=""> <button onClick={toggleTheme}><FontAwesomeIcon icon={faAdjust} /></button></a></li>
         </ul>
       </nav>
       {renderComponent()}
