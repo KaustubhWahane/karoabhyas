@@ -2,25 +2,10 @@ import { useState } from 'react';
 import './LoginAccess.css';
 
 function LoginAccess() {
-  const [isVisible, setIsVisible] = useState(false);
-  const [isTestVisible, setIsTestVisible] = useState(false);
-  const [isQnA, setQnAVisible] = useState(false);
+  const [content, setContent] = useState(null);
 
-
-  function toggleVisibility() {
-    setIsVisible(!isVisible);
-    setIsTestVisible(false);
-  }
-
-  function toggleTestVisibility() {
-    setIsTestVisible(!isTestVisible);
-    setIsVisible(false);
-  }
-  
-  function toggleQA() {
-    setQnAVisible(!isQnA);
-    setIsVisible(false); 
-    setIsTestVisible(false); 
+  function handleButtonClick(buttonContent) {
+    setContent(buttonContent);
   }
 
   return (
@@ -39,10 +24,10 @@ function LoginAccess() {
           <p>C-1/003,Devdutta Co-op <br /> Lulla Complex , Adharwadi Jail Road <br /> Kalyan , Mumbai <br /> PIN: 421301</p>
         </div>
       </div>
-        <button style={{ marginLeft: "10em" }} className="toggle-button" onClick={toggleVisibility}>Orders</button>
-        <button style={{ marginLeft: "10em" }} className="toggle-button" onClick={toggleTestVisibility}>Tests</button>
-        <button style={{ marginLeft: "10em" }} className="toggle-button" onClick={toggleQA}>Q/A</button>
-      {isVisible && (
+      <button style={{ marginLeft: "10em" }} className="toggle-button" onClick={() => handleButtonClick("Orders")}>Orders</button>
+      <button style={{ marginLeft: "10em" }} className="toggle-button" onClick={() => handleButtonClick("Tests")}>Tests</button>
+      <button style={{ marginLeft: "10em" }} className="toggle-button" onClick={() => handleButtonClick("Q/A")}>Q/A</button>
+      {content === "Orders" && (
         <div className="parent-container">
           <div className="left-container">
             <h1>ORDER #1293</h1>
@@ -57,7 +42,7 @@ function LoginAccess() {
           </div>
         </div>
       )}
-      {isTestVisible && (
+      {content === "Tests" && (
         <div className="parent-container">
           <div className="left-container">
             <h1>TEST NAME</h1>
@@ -71,15 +56,15 @@ function LoginAccess() {
           </div>
         </div>
       )}
-      {isQnA && (
-          <div className="container">
+      {content === "Q/A" && (
+        <div className="container">
           <h1>QUESTION TITLE</h1>
           <p>MODULE: NAME OF MODULE</p>
           <p>DATE: 24/4/2024</p>
           <div className="right-container">
             <button type="button" className="login-button">VIEW REPLY</button>
           </div>
-          </div>
+        </div>
       )}
     </>
   );
