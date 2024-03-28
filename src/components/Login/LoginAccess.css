@@ -1,8 +1,20 @@
 .parent-container {
   margin: 10em;
   display: grid;
-  grid-template-columns: 1fr 1fr; 
+  grid-template-columns: 1fr auto 1fr; 
 }
 
+.vertical-line {
+  border-left: 1px solid rgb(191, 188, 188);
+  align-self: stretch;
+  margin: 0 auto;
+  margin-left: -3em;
+}
 
+.right-container button {
+  margin-right: 10px; 
+}
+.container{
+  margin: 10em;
+}
 
