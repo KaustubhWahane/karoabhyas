@@ -41,7 +41,7 @@ function Cart() {
       {showPopup && (
         <div className="popup">
           <div className="popup-content">
-            <h2>PLEASE PROVIDE YOUR ADDRESS</h2>
+            <h2 style={{color:"black"}}>PLEASE PROVIDE YOUR ADDRESS</h2>
             <textarea style={{ width: "500px", height: "100px" }} type="text" placeholder="Enter your address" />
             <button onClick={togglePopup}>Close</button>
           </div>
@@ -50,7 +50,7 @@ function Cart() {
       {showDeletePopup && (
       <div className="popup">
         <div className="popup-content">
-          <h2>DELETE BOOK FROM CART?</h2>
+          <h2 style={{color:"black"}}>DELETE BOOK FROM CART?</h2>
           <div className="popup-buttons">
             <button onClick={toggleDeletePopup} style={{ marginRight: "10px" }}>Cancel</button>
             <button style={{marginLeft: "15em" }}>Delete</button>
